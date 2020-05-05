@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "maSuperAgence",
+            "dialect": "MySQL",
+            "name": "adrien",
+            "password": "adrien",
+            "port": 3306,
+            "server": "localhost",
+            "username": "adrien"
+        }
+    ]
+}
