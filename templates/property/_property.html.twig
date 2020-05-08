@@ -4,6 +4,10 @@
 
         <img src=" {{ vich_uploader_asset(property, 'imageFile') | imagine_filter('thumb')}} " alt="card-img-top" style="width: 100%; height: auto ">
 
+    {% else %}
+        <img src=" {{ '/images/properties/abc.jpg' | imagine_filter('thumb')}} " alt="card-img-top"
+            style="width: 100%; height: auto ">
+
     {% endif %}
     <div class="card-body">
         <h5 class="card-title">
