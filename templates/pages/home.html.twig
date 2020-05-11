@@ -7,4 +7,23 @@
 <h1>Bienvenue</h1>
 </div>
 
+<div class="container">
+    <h2>Les derniers biens</h2>
+    <div class="row flex">
+        {% for property in properties %}
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="{{ path ('property.show', {id: property.id, slug: property.slug}) }}">{{ property.title }}</a>
+                    </h5>
+                    <p class="card-text">{{ property.city }} ({{ property.postalCode }})</p>
+                    <h5 class="text-primary">{{ property.formattedPrice }} €</h5>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock %}
